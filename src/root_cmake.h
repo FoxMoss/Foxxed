@@ -1,0 +1,8 @@
+"cmake_minimum_required(VERSION 4.0)\n"
+"set(CMAKE_CXX_STANDARD 20)\n"
+"\n"
+"project({})\n"
+"\n"
+"set(CMAKE_EXPORT_COMPILE_COMMANDS ON)\n"
+"\n"
+"add_subdirectory(src)\n"

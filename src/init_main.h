@@ -1,0 +1,6 @@
+"#include <stdio.h>\n"
+"\n"
+"int main(int argc, char *argv[]) {\n"
+"  printf(\"Hello world!\\n\");\n"
+"  return 0;\n"
+"}\n"
