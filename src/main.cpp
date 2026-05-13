@@ -57,6 +57,12 @@ void init_project(CLI::App *init_subcommand) {
   ;
   gitignore_stream.close();
 
+  const auto clangd_path = project_path / ".clangd";
+  std::ofstream clangd_stream(clangd_path);
+  clangd_stream << 
+    #include "root_clangd.h"
+  ;
+  clangd_stream.close();
 
   auto src_path = project_path / "src/";
   std::filesystem::create_directories(src_path);
