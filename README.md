@@ -1,7 +1,5 @@
 # Foxxed
-## The missing CMake project manager
-
-A tool for creating CMake projects, because I'm tired of copy pasing files.
+The missing CMake project manager, a tool for creating and maintaining CMake projects.
 
 ## Install
 
@@ -18,6 +16,23 @@ foxxed init
 Then follow the prompts!
 
 ## Todo:
+- [ ] Configuration for project generation
 - [ ] FetchContent manager
+- [ ] Running projects via one command
+- [ ] Building projects via one command
+- [ ] Generating all files from CMake from a TOML or YAML config
 - [ ] CPack generation
-- [ ] On real package managers 
+- [ ] On real package managers (apt aur etc)
+
+## Building from source
+
+Install c++ with 23 support, cmake, & ninja, then run:
+
+```bash
+mkdir build
+cd build
+cmake .. -GNinja
+ninja
+```
+
+Then the binary is made at `src/foxxed`.

@@ -13,10 +13,10 @@ void init_project(CLI::App *init_subcommand) {
   std::unique_ptr<char> project_name;
 
   char *project_name_raw;
-  while ((project_name_raw = ic_readline("Project Name (CamelCase)")) == NULL ||
+  while ((project_name_raw = ic_readline("Project Name (CamelCase)")) == nullptr ||
          strlen(project_name_raw) == 0) {
     ic_println("[ansi-yellow]Input error");
-    if (project_name_raw == NULL) {
+    if (project_name_raw == nullptr) {
       return;
     }
   }
@@ -26,10 +26,10 @@ void init_project(CLI::App *init_subcommand) {
 
   char *executable_name_raw;
   while ((executable_name_raw = ic_readline("Executable (snake_case)")) ==
-             NULL ||
+             nullptr ||
          strlen(executable_name_raw) == 0) {
     ic_println("[ansi-yellow]Input error");
-    if (executable_name_raw == NULL) {
+    if (executable_name_raw == nullptr) {
       return;
     }
   }
